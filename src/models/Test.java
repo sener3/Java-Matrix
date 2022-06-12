@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Arrays;
+
 public class Test {
 	private int[][] testMatrix;
 	
@@ -11,6 +13,23 @@ public class Test {
 
 	public int[][] getTestMatrix() {
 		return testMatrix;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		
+		Test objTest = (Test) obj;
+		
+		if (!Arrays.equals(objTest.testMatrix, this.testMatrix))
+			return false;
+		
+		return true;
 	}
 
 	public void setTestMatrix(int[][] testMatrix) {

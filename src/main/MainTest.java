@@ -21,9 +21,16 @@ public class MainTest {
 			
 			printMatrix(testCloneMatrix);
 			
+			
+			boolean equalityResult = test.equals(testClone);
+
+			System.out.print(equalityResult);
+
+			
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
+		
 	}
 	
 	public static void printMatrix(int[][] matrix) {
