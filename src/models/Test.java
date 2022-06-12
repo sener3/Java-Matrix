@@ -49,6 +49,15 @@ public class Test {
 	public String toString() {
 		return Arrays.deepToString(testMatrix);
 	}
+
+	@Override
+	public int hashCode() {
+		int code = 0;
+        for (int i = 0; i < testMatrix.length; i++) {
+            code += Arrays.hashCode(testMatrix[i]);
+        }
+		return code;
+	}
 	
 	
 }

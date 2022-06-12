@@ -33,6 +33,8 @@ public class MainTest {
 		
 		System.out.println(test.toString());
 		
+		System.out.println(test.hashCode());
+
 	}
 	
 	public static void printMatrix(int[][] matrix) {
