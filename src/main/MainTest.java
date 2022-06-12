@@ -24,12 +24,14 @@ public class MainTest {
 			
 			boolean equalityResult = test.equals(testClone);
 
-			System.out.print(equalityResult);
+			System.out.println(equalityResult);
 
 			
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
+		
+		System.out.println(test.toString());
 		
 	}
 	

@@ -44,4 +44,11 @@ public class Test {
 		
 		return clone;
 	}
+
+	@Override
+	public String toString() {
+		return Arrays.deepToString(testMatrix);
+	}
+	
+	
 }
