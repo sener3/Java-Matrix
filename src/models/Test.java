@@ -15,6 +15,10 @@ public class Test {
 		return testMatrix;
 	}
 
+	public void setTestMatrix(int[][] testMatrix) {
+		this.testMatrix = testMatrix;
+	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -30,10 +34,6 @@ public class Test {
 			return false;
 		
 		return true;
-	}
-
-	public void setTestMatrix(int[][] testMatrix) {
-		this.testMatrix = testMatrix;
 	}
 
 	@Override
